@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.victoria.lab4dvornykvictoriais_52.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Лабораторна робота №4"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Виконала студентка групи ІС-52
+Дворник Вікторія"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/videobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:background="#dfa5b9"
+        android:layout_marginTop="10dp"
+        android:text="Програти відео"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="301dp" />
+
+    <Button
+        android:id="@+id/audiobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="140dp"
+        android:background="#7b89e3"
+        android:text="Програти аудіо"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="301dp" />
+</LinearLayout>

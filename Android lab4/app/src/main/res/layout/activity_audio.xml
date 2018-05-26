@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.victoria.lab4dvornykvictoriais_52.AudioActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonmusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="play"
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/button_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="pause"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="stop"
+            android:text="Stop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <ListView android:id="@+id/listaudio"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"></ListView>
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:text="Налаштуйте гучність"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Налаштуйте гучність" />
+        <SeekBar
+            android:id="@+id/volumeControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextaudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/Internetbuttonaudio"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Завантажити" />
+    </LinearLayout>
+
+</LinearLayout>
